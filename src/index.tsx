@@ -4,8 +4,10 @@ import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import './index.scss';
 import App from './components/App';
 
-const Home = React.lazy(() => import(/* webpackPrefetch:true */'./pages/Home'));
-const Test = React.lazy(() => import(/* webpackPrefetch:true */'./pages/Test'));
+const Home = React.lazy(() => import('./pages/Home'));
+const DragEvent = React.lazy(() => import('./pages/DragEvent'));
+const SortableDragEvent = React.lazy(() => import('./pages/SortableDragEvent'));
+
 
 function WrapperSuspense(WrappedComponent: React.ComponentType) {
   return (
@@ -25,8 +27,12 @@ const router = createBrowserRouter([
         element: WrapperSuspense(Home)
       },
       {
-        path: 'test',
-        element: WrapperSuspense(Test)
+        path: 'drag-event',
+        element: WrapperSuspense(DragEvent)
+      },
+      {
+        path: 'sortable-drag-event',
+        element: WrapperSuspense(SortableDragEvent)
       },
       {
         index: true,

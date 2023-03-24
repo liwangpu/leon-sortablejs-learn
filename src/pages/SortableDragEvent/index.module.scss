@@ -1,0 +1,59 @@
+.page {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  overflow: auto;
+}
+
+.section {
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 12px 0;
+  }
+}
+
+.zone {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 140px;
+  height: 200px;
+  flex: 0 0 200px;
+  border: 1px solid #cacdd1;
+  padding: 6px;
+  z-index: 1;
+
+  &--drop {
+    width: 240px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    background-color: pink;
+    margin-bottom: 4px;
+  }
+}
+
+.zone-wrapper {
+  position: fixed;
+  background-color: orange;
+  z-index: 10;
+  pointer-events: none;
+
+  &.inner {
+    top: 150px;
+    right: 80px;
+  }
+
+  &.outer {
+    top: 150px;
+    right: 100px;
+  }
+}

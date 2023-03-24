@@ -2,6 +2,12 @@
   "name": "pure-react-seed",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start --silent",
+    "build": "react-scripts build --silent",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -25,12 +31,6 @@
     "typescript": "^4.8.4",
     "sass": "^1.57.1",
     "ts-node": "10.9.1"
-  },
-  "scripts": {
-    "start": "react-scripts start --silent",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

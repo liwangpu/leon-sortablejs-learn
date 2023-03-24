@@ -1,11 +1,10 @@
-import React, { useState, memo } from 'react';
-import { faker } from '@faker-js/faker';
+import React, { memo } from 'react';
 import styles from './index.module.scss';
 
 const Test: React.FC = memo(() => {
 
   return (
-    <div className={styles['test']}>
+    <div className={styles['page']}>
 
     </div>
   );
