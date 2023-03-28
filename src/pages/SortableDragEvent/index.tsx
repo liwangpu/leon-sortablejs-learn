@@ -1,6 +1,7 @@
 import React, { memo, useEffect, useMemo, useRef } from 'react';
 import styles from './index.module.scss';
-import Sortable from '../../sortablejs/Sortable';
+// import Sortable from '../../sortablejs/Sortable';
+import Sortable from 'sortablejs';
 import classnames from 'classnames';
 
 const DropZone: React.FC<{ title: string; children?: React.ReactNode; zindex?: number; bgColor?: string }> = memo(props => {
