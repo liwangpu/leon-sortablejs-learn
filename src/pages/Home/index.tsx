@@ -5,7 +5,7 @@ const Home: React.FC = memo(() => {
 
   return (
     <div className={styles['page']}>
-
+      Home Page
     </div>
   );
 });

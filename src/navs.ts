@@ -13,6 +13,10 @@ const Navs: Array<INavItem> = [
     title: 'Sortable拖拽事件',
     path: '/app/sortable-drag-event'
   },
+  {
+    title: '嵌套拖拽',
+    path: '/app/nested-list'
+  },
 ];
 
 export default Navs;

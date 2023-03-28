@@ -48,7 +48,7 @@ const DropZone: React.FC<{ title: string; children?: React.ReactNode; zindex?: n
         evt.related; // HTMLElement on which have guided
         evt.relatedRect; // DOMRect
         evt.willInsertAfter; // Boolean that is true if Sortable will insert drag element after target by default
-        originalEvent.clientY; // mouse position
+        // originalEvent.clientY; // mouse position
         // return false; — for cancel
         // return -1; — insert before target
         // return 1; — insert after target
@@ -110,7 +110,7 @@ const DragZone: React.FC = memo(props => {
         evt.related; // HTMLElement on which have guided
         evt.relatedRect; // DOMRect
         evt.willInsertAfter; // Boolean that is true if Sortable will insert drag element after target by default
-        originalEvent.clientY; // mouse position
+        // originalEvent.clientY; // mouse position
         // return false; — for cancel
         // return -1; — insert before target
         // return 1; — insert after target

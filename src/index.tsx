@@ -7,7 +7,7 @@ import App from './components/App';
 const Home = React.lazy(() => import('./pages/Home'));
 const DragEvent = React.lazy(() => import('./pages/DragEvent'));
 const SortableDragEvent = React.lazy(() => import('./pages/SortableDragEvent'));
-
+const NestedList = React.lazy(() => import('./pages/NestedList'));
 
 function WrapperSuspense(WrappedComponent: React.ComponentType) {
   return (
@@ -33,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: 'sortable-drag-event',
         element: WrapperSuspense(SortableDragEvent)
+      },
+      {
+        path: 'nested-list',
+        element: WrapperSuspense(NestedList)
       },
       {
         index: true,
